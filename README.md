@@ -6,7 +6,7 @@ Welcome to the **OWASP Security Training Repository**! This project is designed 
 
 ## 📁 Folder Structure
 
-```
+```text
 ├── README.md
 ├── recon.sh
 ├── command_injection/
@@ -62,14 +62,19 @@ Welcome to the **OWASP Security Training Repository**! This project is designed 
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/Ali-hey-0/owasp.git
    ```
+
 2. **Explore each section:**
+
    - Read the markdown files for theory and practical examples.
    - Run the Python scripts in the `SQL_Injection` folder to practice exploitation.
    - Use the images for visual reference.
+
 3. **Run Recon Script:**
+
    ```bash
    bash recon.sh
    ```
@@ -93,7 +98,8 @@ Contributions are welcome! Feel free to submit issues, suggestions, or pull requ
 ## 📧 Contact
 
 For questions or feedback, please open an issue or contact the repository owner.
-Email : aliheydari1381doc@gmail.com
+
+Email: aliheydari1381doc@gmail.com
 
 ---
 

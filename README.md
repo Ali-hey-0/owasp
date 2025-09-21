@@ -19,10 +19,11 @@ owasp/
 ├── 📂 week1/           # Foundation: Injection Attacks & Reconnaissance
 ├── 📂 week2/           # Client-Side: XSS, CORS, API Security  
 ├── 📂 week3/           # Advanced: Bypassing & Misconfigurations
+├── 📂 week4/           # Cryptography, IDOR, Insecure Design, Nuclei
+├── 📂 week5/           # Deserialization Attacks & Multi-language Exploits
 └── 📄 README.md        # This file
 ```
 
----
 
 ## 🚀 Week 1: Foundation Security Testing
 
@@ -120,6 +121,51 @@ owasp/
 ### 🌐 [`week3/ssrf/`](./week3/ssrf/)
 
 - **`ssrf.md`** - Server-Side Request Forgery vulnerabilities and exploitation
+
+---
+
+## 🧩 Week 4: Cryptography, IDOR, Insecure Design & Nuclei
+
+**Focus**: Cryptographic vulnerabilities, JWT, Insecure Direct Object References (IDOR), insecure design patterns, and automated vulnerability scanning with Nuclei.
+
+### 🔒 [`week4/crypto/`](./week4/crypto/)
+
+- **`crypto.md`** - Cryptography basics and common flaws
+- **`crypto.php`** - Practical cryptography examples in PHP
+- **`jwt.md`** - JSON Web Token vulnerabilities and exploitation
+
+### 🔑 [`week4/idor/`](./week4/idor/)
+
+- **`idor.md`** - Insecure Direct Object Reference vulnerabilities
+- **`safe.php`** - Secure coding practices for IDOR
+
+### 🏗️ [`week4/insecure design/`](./week4/insecure%20design/)
+
+- **`insecure.md`** - Insecure design patterns and business logic errors
+- **`business_logic_error.md`** - Real-world business logic flaws
+- **`upload.md`** - Insecure file upload vulnerabilities
+
+### ⚡ [`week4/nuclei/`](./week4/nuclei/)
+
+- **`explain.md`** - Automated vulnerability scanning with Nuclei
+
+---
+
+## 🧬 Week 5: Deserialization Attacks & Multi-language Exploits
+
+**Focus**: Insecure deserialization vulnerabilities across PHP, Python, and Node.js, with hands-on exploitation and automation.
+
+### 🧩 [`week5/deserialization/`](./week5/deserialization/)
+
+- **`insecure_serialization.md`** - Insecure serialization and deserialization concepts
+- **`serialaztion_deserialazion.md`** - Serialization/deserialization attack techniques
+- **`php.md`** - PHP deserialization vulnerabilities and exploitation
+
+#### Language-specific Exploits
+
+- **`nodejs/`** - Node.js deserialization attack scripts
+- **`php/`** - PHP deserialization attack scripts and examples
+- **`python/`** - Python deserialization attack scripts
 
 ---
 

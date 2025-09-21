@@ -1,108 +1,249 @@
-# OWASP Security Training Repository
+# Ìª°Ô∏è OWASP Security Training & Penetration Testing Lab
 
-Welcome to the **OWASP Security Training Repository**! This project is designed to help you learn, practice, and understand common web application security vulnerabilities, including SQL Injection, Command Injection, and Remote Code Execution (RCE). Each section contains educational resources, code samples, and practical exercises to enhance your security skills.
+[![Security Focus](https://img.shields.io/badge/Focus-Web%20Security-red?style=for-the-badge)](https://owasp.org/)
+[![Learning Path](https://img.shields.io/badge/Learning-3%20Weeks-blue?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Author](https://img.shields.io/badge/Author-Ali%20Heydari-purple?style=for-the-badge)](https://github.com/Ali-hey-0)
 
----
+> **A comprehensive 3-week security traiing program covering OWASP Top 10 vulnerabilities, exploitation techniques, and defensive strategies.**
 
-## üìÅ Folder Structure
+## Ì≥ö Overview
 
-```text
-‚îú‚îÄ‚îÄ README.md
-‚îú‚îÄ‚îÄ recon.sh
-‚îú‚îÄ‚îÄ command_injection/
-‚îÇ   ‚îú‚îÄ‚îÄ Data_Exfiltration.md
-‚îÇ   ‚îú‚îÄ‚îÄ Detection_phase.md
-‚îÇ   ‚îú‚îÄ‚îÄ general.md
-‚îÇ   ‚îú‚îÄ‚îÄ Out-of-Band.md
-‚îÇ   ‚îî‚îÄ‚îÄ Reverse_Shell.md
-‚îú‚îÄ‚îÄ RCE/
-‚îÇ   ‚îî‚îÄ‚îÄ rce.md
-‚îú‚îÄ‚îÄ SQL_Injection/
-‚îÇ   ‚îú‚îÄ‚îÄ blind_injection.md
-‚îÇ   ‚îú‚îÄ‚îÄ sample.py
-‚îÇ   ‚îú‚îÄ‚îÄ sample2.py
-‚îÇ   ‚îú‚îÄ‚îÄ sql.md
-‚îÇ   ‚îú‚îÄ‚îÄ sqlmap.md
-‚îÇ   ‚îî‚îÄ‚îÄ image/
-‚îÇ       ‚îî‚îÄ‚îÄ sql/
-‚îÇ           ‚îú‚îÄ‚îÄ 1758004775270.png
-‚îÇ           ‚îî‚îÄ‚îÄ 1758005846422.png
+This repository contains a structured, week-by-week learning path for web application security testing and penetration testing. Each week focuses on different aspects of cybersecurity, from basic injection attacks to advanced bypass techniques and security misconfigurations.
+
+## Ì∑ÇÔ∏è Repository Structure
+
+```
+owasp/
+‚îú‚îÄ‚îÄ Ì≥Å week1/           # Foundation: Injection Attacks & Reconnaissance
+‚îú‚îÄ‚îÄ Ì≥Å week2/           # Client-Side: XSS, CORS, API Security  
+‚îú‚îÄ‚îÄ Ì≥Å week3/           # Advanced: Bypassing & Misconfigurations
+‚îî‚îÄ‚îÄ Ì≥Ñ README.md        # This file
 ```
 
 ---
 
-## üõ°Ô∏è Sections Overview
+## ÌæØ Week 1: Foundation Security Testing
 
-### 1. Command Injection
+**Focus**: Server-side injection vulnerabilities and reconnaissance techniques
 
-- **Data_Exfiltration.md**: Techniques for extracting data via command injection.
-- **Detection_phase.md**: Methods to detect command injection vulnerabilities.
-- **general.md**: Introduction and general concepts of command injection.
-- **Out-of-Band.md**: Out-of-band exploitation strategies.
-- **Reverse_Shell.md**: How to obtain a reverse shell using command injection.
+### Ì≥Ç [`week1/command_injection/`](./week1/command_injection/)
+- **`general.md`** - Introduction to OS Command Injection
+- **`Data_Exfiltration.md`** - Techniques for data extraction via command injection
+- **`Detection_phase.md`** - Methods to identify command injection vulnerabilities
+- **`Out-of-Band.md`** - Out-of-band command injection techniques
+- **`Reverse_Shell.md`** - Establishing reverse shells through command injection
 
-### 2. Remote Code Execution (RCE)
+### Ì≥Ç [`week1/RCE/`](./week1/RCE/)
+- **`rce.md`** - Remote Code Execution vulnerabilities and exploitation
 
-- **rce.md**: Explains RCE vulnerabilities, exploitation methods, and mitigation strategies.
+### Ì≥Ç [`week1/recon/`](./week1/recon/)
+- **`recon.sh`** - Advanced reconnaissance automation script (NSA-grade framework)
+- **`recon1.sh`** - Alternative reconnaissance script
 
-### 3. SQL Injection
+### Ì≥Ç [`week1/SQL_Injection/`](./week1/SQL_Injection/)
+- **`sql.md`** - SQL Injection fundamentals and techniques
+- **`blind_injection.md`** - Blind SQL injection methodology
+- **`sqlmap.md`** - Automated SQL injection testing with SQLMap
+- **`sample.py`** & **`sample2.py`** - Practical Python exploitation scripts
+- **`image/sql/`** - Visual documentation and screenshots
 
-- **blind_injection.md**: Blind SQL injection techniques and detection.
-- **sample.py & sample2.py**: Python scripts demonstrating SQL injection vulnerabilities and exploitation.
-- **sql.md**: Overview of SQL injection, types, and prevention.
-- **sqlmap.md**: Guide to using `sqlmap` for automated SQL injection testing.
-- **image/sql/**: Visual aids and diagrams related to SQL injection.
-
-### 4. Reconnaissance
-
-- **recon.sh**: Shell script for basic reconnaissance tasks.
-
----
-
-## üöÄ Getting Started
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/Ali-hey-0/owasp.git
-   ```
-
-2. **Explore each section:**
-
-   - Read the markdown files for theory and practical examples.
-   - Run the Python scripts in the `SQL_Injection` folder to practice exploitation.
-   - Use the images for visual reference.
-
-3. **Run Recon Script:**
-
-   ```bash
-   bash recon.sh
-   ```
+### Ì≥Ç [`week1/SSTI/`](./week1/SSTI/)
+- **`ssti.md`** - Server-Side Template Injection vulnerabilities
+- **`ssti.py`** - SSTI exploitation scripts
+- **`tplmap.md`** - Automated SSTI testing with Tplmap
 
 ---
 
-## üìù Contributing
+## Ìºê Week 2: Client-Side Security & API Testing
 
-Contributions are welcome! Feel free to submit issues, suggestions, or pull requests to improve the content and examples.
+**Focus**: Client-side vulnerabilities, CORS misconfigurations, and API security
+
+### Ì≥Ç [`week2/API-SEC/`](./week2/API-SEC/)
+- **`Cookies.md`** - HTTP Cookies security analysis and exploitation
+- **`cookies.php`** - Practical cookie manipulation examples
+- **`DOM&BOM.md`** - Document Object Model and Browser Object Model security
+- **`csp.md`** - Content Security Policy analysis and bypasses
+- **`csp.php`** - CSP implementation examples
+- **`same_origin_policy.md`** - Same Origin Policy and its implications
+- **`exam.html`** - Interactive security testing exercises
+
+### Ì≥Ç [`week2/COSRS/`](./week2/COSRS/) *(CORS)*
+- **`cors.md`** - Cross-Origin Resource Sharing fundamentals
+- **`cors_misconfiguration.md`** - Common CORS misconfigurations
+- **`cross_origin_http_requiest.md`** - Cross-origin HTTP request analysis
+- **`implementaion.md`** - CORS implementation best practices
+- **`checker_function.md`** - CORS validation techniques
+- **`vulnerable_cors.md`** - Vulnerable CORS configurations
+- **`cors.html`** - Interactive CORS testing
+
+### Ì≥Ç [`week2/XSS/`](./week2/XSS/)
+- **`XSS.md`** - Cross-Site Scripting vulnerabilities and payloads
+- **`CSRF.md`** - Cross-Site Request Forgery attacks and defenses
 
 ---
 
-## üìö References
+## Ì∫Ä Week 3: Advanced Techniques & Security Misconfigurations
 
-- [OWASP Official Website](https://owasp.org/)
-- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
-- [SQLMap Tool](http://sqlmap.org/)
+**Focus**: Protection bypassing, redirects, misconfigurations, and SSRF
+
+### Ì≥Ç [`week3/bypassing Protection/`](./week3/bypassing Protection/)
+- **`bypassing_Protection.md`** - Comprehensive guide to bypassing security controls
+- **`javascript_exam.html`** - JavaScript security testing challenges
+- **`php_exam.php`** - PHP security assessment exercises
+
+### Ì≥Ç [`week3/open Redirect/`](./week3/open Redirect/)
+- **`open_redirect.md`** - Open redirect vulnerabilities and exploitation
+- **`redirect_by_javascript.html`** - Client-side redirect examples
+- **`redirect_by_python.py`** - Server-side redirect implementations
+
+### Ì≥Ç [`week3/security misconfig/`](./week3/security misconfig/)
+- **`README.md`** - Security misconfiguration overview
+- **`default_credential.md`** - Default credential vulnerabilities
+- **`ffuf.md`** - Web fuzzing with ffuf tool
+- **`force_browsing.md`** - Forced browsing techniques
+- **`s3_bucket.md`** - AWS S3 bucket security testing
+- **`verb_tamper.md`** - HTTP verb tampering attacks
+
+### Ì≥Ç [`week3/ssrf/`](./week3/ssrf/)
+- **`ssrf.md`** - Server-Side Request Forgery vulnerabilities and exploitation
 
 ---
 
-## üìß Contact
+## Ìª†Ô∏è Tools & Technologies Featured
 
-For questions or feedback, please open an issue or contact the repository owner.
-
-Email: aliheydari1381doc@gmail.com
+| Category | Tools |
+|----------|-------|
+| **Reconnaissance** | Custom NSA-grade framework, subfinder, nuclei |
+| **SQL Injection** | SQLMap, custom Python scripts |
+| **Web Fuzzing** | ffuf, custom wordlists |
+| **Template Injection** | Tplmap, custom payloads |
+| **Proxy/Interception** | Manual testing, browser tools |
 
 ---
 
-## üèÜ License
+## Ì∫Ä Quick Start
 
-This project is licensed under the MIT License.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/owasp.git
+cd owasp
+```
+
+### 2. Start with Week 1
+```bash
+cd week1
+# Read the fundamentals
+cat command_injection/general.md
+cat SQL_Injection/sql.md
+
+# Try the reconnaissance script
+chmod +x recon/recon.sh
+./recon/recon.sh example.com
+```
+
+### 3. Progress Through Each Week
+- Follow the structured learning path: Week 1 ‚Üí Week 2 ‚Üí Week 3
+- Practice with the provided scripts and examples
+- Study the markdown documentation for theory
+- Use the HTML/PHP files for hands-on testing
+
+---
+
+## Ì≥ñ Learning Path Recommendations
+
+### Ìø¢ Beginner Track
+1. Start with `week1/command_injection/general.md`
+2. Practice basic SQL injection with `week1/SQL_Injection/sql.md`
+3. Learn reconnaissance with `week1/recon/recon.sh`
+
+### Ìø° Intermediate Track
+1. Dive into `week2/XSS/XSS.md` and `week2/COSRS/cors.md`
+2. Understand API security with `week2/API-SEC/`
+3. Practice with interactive HTML examples
+
+### Ì¥¥ Advanced Track
+1. Master bypass techniques in `week3/bypassing Protection/`
+2. Learn about security misconfigurations in `week3/security misconfig/`
+3. Understand SSRF attacks with `week3/ssrf/`
+
+---
+
+## Ìæì Educational Disclaimer
+
+**‚ö†Ô∏è IMPORTANT**: This repository is for **educational purposes only**. 
+
+- Use these techniques only on systems you own or have explicit permission to test
+- Always follow responsible disclosure practices
+- Respect applicable laws and regulations
+- This content is intended for security professionals, students, and researchers
+
+---
+
+## Ì¥ù Contributing
+
+We welcome contributions! Please see our contribution guidelines:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Areas for Contribution
+- Additional vulnerability examples
+- New exploitation techniques
+- Improved documentation
+- Interactive labs and challenges
+- Tool automation scripts
+
+---
+
+## Ì≥ö References & Resources
+
+### OWASP Resources
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+
+### Additional Learning
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [SANS Reading Room](https://www.sans.org/reading-room/)
+
+### Security Tools
+- [SQLMap](http://sqlmap.org/) - Automatic SQL injection tool
+- [ffuf](https://github.com/ffuf/ffuf) - Fast web fuzzer
+- [Nuclei](https://github.com/projectdiscovery/nuclei) - Vulnerability scanner
+
+---
+
+## Ì≥û Contact & Support
+
+- **Author**: Ali Heydari
+- **Email**: aliheydari1381doc@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/your-username/owasp/issues)
+
+---
+
+## Ì≥Ñ License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Ìºü Acknowledgments
+
+- OWASP Foundation for their invaluable security resources
+- Security research community for continuous knowledge sharing
+- Contributors and users who help improve this educational resource
+
+---
+
+<div align="center">
+
+**Ìª°Ô∏è Stay Secure, Keep Learning! Ìª°Ô∏è**
+
+[![Star this repository](https://img.shields.io/github/stars/your-username/owasp?style=social)](https://github.com/your-username/owasp)
+
+</div>

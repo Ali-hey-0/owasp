@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Parameters Input Validator </title>
+</head>
+<body>
+    <script>
+        function getqueryparam(name){
+            var urlparam = new URLSearchParams(window.location.search);
+            return urlparam.get(name);
+        }
+
+        var UserInput = getqueryparam("url");
+        
+        var regexPattern = /^((https?:)?\/\/([^/]+\.)?site\.(net|cn|app))?\/$/;
+
+        if(UserInput && UserInput.match(regexPattern)){
+            window.location.href = UserInput;
+        }else {
+            alert("Invalid URL parameter. Please provide a valid URL.");
+        }
+
+
+    </script>
+
+</body>
+</html>

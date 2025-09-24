@@ -1,0 +1,29 @@
+{
+  "name": "owasp-security-lab",
+  "version": "1.0.0",
+  "description": "OWASP Security Training & Penetration Testing Lab",
+  "main": "week5/deserialization/nodejs/send.js",
+  "scripts": {
+    "start": "node week5/deserialization/nodejs/send.js",
+    "dev": "nodemon week5/deserialization/nodejs/send.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "owasp",
+    "security",
+    "penetration-testing",
+    "web-security"
+  ],
+  "author": "Ali Heydari",
+  "license": "MIT"
+}

@@ -1,0 +1,123 @@
+version: '3.8'
+
+services:
+  # PHP/Apache service for PHP applications and HTML files
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile.php
+    container_name: owasp-php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - php-uploads:/var/www/html/uploads
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - owasp-network
+
+  # Node.js service for Node.js applications
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile.nodejs
+    container_name: owasp-nodejs
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./:/app
+      - ode-modules:/app/node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - owasp-network
+
+  # Python service for Python scripts
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: owasp-python
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONPATH=/app
+    depends_on:
+      - mysql
+    networks:
+      - owasp-network
+
+  # MySQL database for SQL injection labs
+  mysql:
+    image: mysql:8.0
+    container_name: owasp-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: owasp_lab
+      MYSQL_USER: owasp_user
+      MYSQL_PASSWORD: owasp_password
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./database-init:/docker-entrypoint-initdb.d
+    networks:
+      - owasp-network
+
+  # Redis for caching and session storage
+  redis:
+    image: redis:7-alpine
+    container_name: owasp-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - owasp-network
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: owasp-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - php-apache
+      - nodejs
+      - python
+    networks:
+      - owasp-network
+
+  # Optional: Adminer for database management
+  adminer:
+    image: adminer:latest
+    container_name: owasp-adminer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mysql
+    networks:
+      - owasp-network
+
+volumes:
+  mysql-data:
+  redis-data:
+  php-uploads:
+  node-modules:
+
+networks:
+  owasp-network:
+    driver: bridge

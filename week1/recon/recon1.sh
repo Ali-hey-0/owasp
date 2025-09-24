@@ -1,7 +1,6 @@
 ```bash
 #!/bin/bash
 # ------------------------------------------
-# OMNISCIENT V3: Next-Gen NSA-Grade Reconnaissance Framework (Top 0.001%)
 # Author: Ali (Supercharged by Aion in Galaxy)
 # Features:
 # - Hyper-deep reconnaissance: subdomains, APIs, cloud assets, IoT, OT, dark pool, supply chain, blockchain

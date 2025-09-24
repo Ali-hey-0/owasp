@@ -1,0 +1,22 @@
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy application files
+COPY . /app/
+
+# Create necessary directories
+RUN mkdir -p /app/uploads /app/tmp
+
+# Expose port 5000
+EXPOSE 5000
+
+# Start the application
+CMD ["node", "week5/deserialization/nodejs/send.js"]

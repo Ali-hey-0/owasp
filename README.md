@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Author](https://img.shields.io/badge/Author-Ali%20Heydari-purple?style=for-the-badge)](https://github.com/Ali-hey-0)
 
-> **A comprehensive 3-week security training program covering OWASP Top 10 vulnerabilities, exploitation techniques, and defensive strategies.**
+> **A comprehensive 7-week security training program covering OWASP Top 10 vulnerabilities, exploitation techniques, and defensive strategies.**
 
 ## 📋 Overview
 

@@ -2,26 +2,28 @@
 # 🛡️ OWASP Security Training & Penetration Testing Lab
 
 [![Security Focus](https://img.shields.io/badge/Focus-Web%20Security-red?style=for-the-badge)](https://owasp.org/)
-[![Learning Path](https://img.shields.io/badge/Learning-3%20Weeks-blue?style=for-the-badge)](#)
+[![Learning Path](https://img.shields.io/badge/Learning-5%20Weeks-blue?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Author](https://img.shields.io/badge/Author-Ali%20Heydari-purple?style=for-the-badge)](https://github.com/Ali-hey-0)
 
-> **A comprehensive 7-week security training program covering OWASP Top 10 vulnerabilities, exploitation techniques, and defensive strategies.**
+> **A comprehensive 5-week security training program covering OWASP Top 10 vulnerabilities, exploitation techniques, and defensive strategies.**
 
 ## 📋 Overview
 
 This repository contains a structured, week-by-week learning path for web application security testing and penetration testing. Each week focuses on different aspects of cybersecurity, from basic injection attacks to advanced bypass techniques and security misconfigurations.
 
+owasp/
+
 ## 📁 Repository Structure
 
-```
+```text
 owasp/
-├── 📂 week1/           # Foundation: Injection Attacks & Reconnaissance
-├── 📂 week2/           # Client-Side: XSS, CORS, API Security  
-├── 📂 week3/           # Advanced: Bypassing & Misconfigurations
-├── 📂 week4/           # Cryptography, IDOR, Insecure Design, Nuclei
-├── 📂 week5/           # Deserialization Attacks & Multi-language Exploits
-└── 📄 README.md        # This file
+├── week1/           # Foundation: Injection Attacks & Reconnaissance
+├── week2/           # Client-Side: XSS, CORS, API Security  
+├── week3/           # Advanced: Bypassing & Misconfigurations
+├── week4/           # Cryptography, IDOR, Insecure Design, Nuclei
+├── week5/           # Deserialization Attacks & Multi-language Exploits
+└── README.md        # This file
 ```
 
 
@@ -203,9 +205,10 @@ chmod +x recon/recon.sh
 ./recon/recon.sh example.com
 ```
 
+
 ### 3. Progress Through Each Week
 
-- Follow the structured learning path: Week 1 → Week 2 → Week 3
+- Follow the structured learning path: Week 1 → Week 2 → Week 3 → Week 4 → Week 5
 - Practice with the provided scripts and examples
 - Study the markdown documentation for theory
 - Use the HTML/PHP files for hands-on testing
@@ -214,23 +217,23 @@ chmod +x recon/recon.sh
 
 ## 📚 Learning Path Recommendations
 
-### 🟢 Beginner Track
 
+### 🟢 Beginner Track
 1. Start with `week1/command_injection/general.md`
 2. Practice basic SQL injection with `week1/SQL_Injection/sql.md`
 3. Learn reconnaissance with `week1/recon/recon.sh`
 
 ### 🟡 Intermediate Track
-
 1. Dive into `week2/XSS/XSS.md` and `week2/COSRS/cors.md`
 2. Understand API security with `week2/API-SEC/`
 3. Practice with interactive HTML examples
 
 ### 🔴 Advanced Track
-
 1. Master bypass techniques in `week3/bypassing Protection/`
 2. Learn about security misconfigurations in `week3/security misconfig/`
 3. Understand SSRF attacks with `week3/ssrf/`
+4. Explore cryptography, JWT, IDOR, and insecure design in `week4/`
+5. Practice deserialization attacks in multiple languages in `week5/`
 
 ---
 

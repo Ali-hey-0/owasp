@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+
+   <h2>request json using script tag</h2>
+   <p>the php file return a call to a function that will handle the json data</p>
+   <p id="demo"></p>
+
+    <script>
+        function myFunc(myObj){
+            document.getElementById("demo").innerHTML = myObj.name 
+        }
+    </script>
+
+    <script src="https://www.w3schools.com/js/demo_jsonp.php"></script>
+    
+</body>
+</html>

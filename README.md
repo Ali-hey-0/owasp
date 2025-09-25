@@ -3,11 +3,11 @@
 # 🛡️ OWASP Security Training & Penetration Testing Lab
 
 [![Security Focus](https://img.shields.io/badge/Focus-Web%20Security-red?style=for-the-badge)](https://owasp.org/)
-[![Learning Path](https://img.shields.io/badge/Learning-5%20Weeks-blue?style=for-the-badge)](https://github.com/Ali-hey-0/owasp#learning-path-recommendations)
+[![Learning Path](https://img.shields.io/badge/Learning-7%20Weeks-blue?style=for-the-badge)](https://github.com/Ali-hey-0/owasp#learning-path-recommendations)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Author](https://img.shields.io/badge/Author-Ali%20Heydari-purple?style=for-the-badge)](https://github.com/Ali-hey-0)
 
-> **A comprehensive 5-week security training program covering the OWASP Top 10, real-world exploitation, and defensive strategies.**
+> **A comprehensive 7-week security training program covering the OWASP Top 10, real-world exploitation, and defensive strategies.**
 
 ## 📋 Overview
 

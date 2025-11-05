@@ -91,4 +91,4 @@ Client → Reverse Proxy → Backend Server → Reverse Proxy → Client
 
 ---
 
-Ali — if you want, I can now help you  **configure a reverse proxy with NGINX** , simulate  **load balancing** , or explore  **reverse proxy security hardening techniques** . Just say the word!
+Ali 

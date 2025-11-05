@@ -232,4 +232,4 @@ Server responds and keeps the connection open for the next request.
 
 ---
 
-Ali — if you want, I can now help you  **simulate Keep-Alive and Pipelining with curl** , compare  **HTTP/1.1 vs HTTP/2** , or build a  **performance test for your web server** . Just say the word!
+Ali 

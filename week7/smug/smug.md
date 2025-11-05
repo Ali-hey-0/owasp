@@ -120,4 +120,4 @@ Host: victim.com
 
 ---
 
-Ali — if you want, I can now help you  **test your app for smuggling vulnerabilities** , simulate a  **CL.TE attack in a safe lab** , or write  **detection rules for reverse proxies and WAFs** . Just say the word!
+Ali 

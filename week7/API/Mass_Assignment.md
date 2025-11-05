@@ -109,4 +109,3 @@ user.email = req.body.email;
 
 ---
 
-Ali — if you want, I can now help you  **audit a model for mass assignment risks** ,  **write a secure input handler** , or simulate a  **mass assignment exploit in a safe lab** . Just say the word!

@@ -131,4 +131,4 @@ sqlmap -u "http://example.com/login.php?user=admin&pass=123" \
 
 SQLMap is a powerful tool for detecting and exploiting SQL injection flaws. However, it should **only be used ethically** (e.g., penetration testing with permission).
 
-Would you like a step-by-step demo of a real-world attack scenario?
+

@@ -107,4 +107,3 @@ ftp://user:pass@host.com/file.txt
 
 ---
 
-Ali — if you want, I can now help you  **build a URL parser** ,  **encode dynamic URLs safely** , or simulate  **URL injection attacks and defenses** . Just say the word!

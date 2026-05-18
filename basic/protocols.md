@@ -201,4 +201,4 @@ Absolutely Ali — let’s dive deep into the **most famous network protocols** 
 
 ---
 
-Ali — if you want, I can now help you  **simulate these protocols** ,  **build a secure communication stack** , or explore  **packet-level analysis using Wireshark or Python** . Just say the word!
+

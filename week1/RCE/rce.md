@@ -1,6 +1,4 @@
-Alright Ali — let’s go from the ground up so you get a **complete picture** of what **RCE (Remote Code Execution)** is, how it works, and why it’s one of the most dangerous vulnerabilities out there.
 
----
 
 ## 📌 What is RCE?
 

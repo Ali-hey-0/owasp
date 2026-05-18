@@ -88,4 +88,3 @@ Absolutely Ali — here’s a complete breakdown of **HTTP status codes** and th
 
 ---
 
-Ali — if you want, I can now help you  **handle these codes in your app** ,  **build custom error pages** , or **simulate API responses** for testing. Just say the word!
